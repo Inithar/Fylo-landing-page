@@ -1,0 +1,134 @@
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .header {
+    .navigation {
+      &__brand-logo-box {
+        margin: 3rem 0 0 3rem;
+      }
+
+      &__brand-logo-icon {
+        width: 12rem;
+        height: 4.2rem;
+      }
+
+      &__links {
+        margin-top: 3rem;
+        margin-right: 2rem;
+      }
+
+      &__link {
+        font-size: 1.6rem;
+      }
+    }
+
+    .mobile-spacer {
+      display: none;
+    }
+
+    .bg-curvy {
+      bottom: 0rem;
+    }
+
+    &__img-section {
+      padding: 6rem 15rem 0;
+    }
+
+    &__intro-img {
+      width: 90%;
+    }
+
+    &__heading {
+      margin-top: 3rem;
+      padding: 0 7%;
+      font-size: 2.7rem;
+      line-height: 3.7rem;
+    }
+
+    &__info {
+      padding: 0 12%;
+    }
+
+    .get-started-btn {
+      font-size: 1.6rem;
+    }
+  }
+
+  .features {
+    &__box {
+      display: flex;
+    }
+
+    .feature {
+      padding: 0 3rem;
+      width: 50%;
+
+      &__icon {
+        height: 8rem;
+      }
+
+      &__heading {
+        margin-top: 3rem;
+      }
+    }
+
+    .stay-productive {
+      display: flex;
+
+      &__box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 4rem;
+      }
+
+      &__img {
+        width: 50%;
+      }
+
+      &__heading {
+        padding-right: 2rem;
+        font-size: 3.15rem;
+      }
+    }
+  }
+
+  .team {
+    padding: 6rem 10.5rem 28rem;
+
+    .card {
+      padding: 3rem 3rem;
+    }
+  }
+
+  .sign-in {
+    padding: 0 11%;
+
+    &__box {
+      padding: 4rem 5rem;
+    }
+
+    &__text {
+      padding: 0 3.5rem;
+    }
+
+    &__input-email {
+      width: 60%;
+    }
+
+    &__btn {
+      width: 40%;
+    }
+
+    &__msg {
+      align-self: flex-start;
+      margin-left: 3rem;
+    }
+  }
+
+  .footer {
+    padding: 24rem 6rem 4rem;
+  }
+}

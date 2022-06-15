@@ -1,0 +1,64 @@
+@media (min-width: 1200px) {
+  .header {
+    &__intro-img {
+      width: 40%;
+    }
+
+    &__heading {
+      padding: 0 23%;
+    }
+
+    &__info {
+      margin-top: 2.8rem;
+      padding: 0 29%;
+    }
+  }
+
+  .features {
+    .feature {
+      padding: 0 8rem;
+    }
+
+    .stay-productive {
+      &__box {
+        padding: 0 3rem 0 6rem;
+      }
+    }
+  }
+
+  .team {
+    .wrapper {
+      flex-wrap: nowrap;
+    }
+
+    .card {
+      margin-right: 3.5rem;
+
+      &:last-child {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .sign-in {
+    padding: 0 20%;
+
+    &__box {
+      padding: 4rem 5rem;
+    }
+
+    &__text {
+      padding: 0 3.5rem;
+    }
+
+    &__input-email {
+      width: 65%;
+    }
+
+    &__btn {
+      width: 35%;
+      font-size: 1.6rem;
+    }
+  }
+}

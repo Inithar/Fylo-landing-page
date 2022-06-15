@@ -1,0 +1,107 @@
+@media (min-width: 576px) {
+  body {
+    font-size: 1.45rem;
+  }
+
+  .heading {
+    font-size: 1.9rem;
+  }
+
+  .header {
+    &__intro-img {
+      width: 80%;
+    }
+
+    &__heading {
+      padding: 0 12%;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+    }
+
+    &__info {
+      padding: 0 18%;
+    }
+  }
+
+  .features {
+    padding: 6rem 4.5rem;
+
+    .feature {
+      padding: 0 16%;
+    }
+
+    .stay-productive {
+      &__heading {
+        font-size: 2.6rem;
+      }
+
+      &__link {
+        margin-top: 1rem;
+        width: 15.6rem;
+      }
+    }
+  }
+
+  .team {
+    padding: 6rem 8.5rem 28rem;
+
+    .card {
+      margin-top: 3.5rem;
+
+      &__img {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+      }
+
+      &__person-name {
+        font-size: 1.5rem;
+      }
+
+      .bg-quotes-icon {
+        position: absolute;
+        top: -2rem;
+        left: 0.8rem;
+        width: 3rem;
+      }
+    }
+  }
+
+  .sign-in {
+    bottom: -12.7rem;
+    padding: 0 3rem;
+
+    &__text {
+      padding: 0 2rem;
+    }
+
+    &__input-box {
+      display: flex;
+      width: 100%;
+    }
+
+    &__input-email,
+    &__btn {
+      height: 5.2rem;
+    }
+
+    &__input-email {
+      width: 55%;
+      margin-right: 2rem;
+    }
+
+    &__btn {
+      width: 45%;
+      margin-top: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer {
+    &__links {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,877 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1c2431;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heading {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+}
+
+.header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header .navigation__brand-logo-box {
+  margin: 2rem 0 0 2rem;
+}
+
+.header .navigation__brand-logo-icon {
+  width: 10rem;
+  height: 3.2rem;
+}
+
+.header .navigation__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+.header .navigation__link {
+  margin-right: 2rem;
+  color: #ededed;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  -webkit-transition: color 0.3s, -webkit-text-decoration-color 0.5s;
+  transition: color 0.3s, -webkit-text-decoration-color 0.5s;
+  transition: color 0.3s, text-decoration-color 0.5s;
+  transition: color 0.3s, text-decoration-color 0.5s, -webkit-text-decoration-color 0.5s;
+}
+
+.header .navigation__link:hover {
+  color: white;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.header .mobile-spacer {
+  position: absolute;
+  bottom: 0;
+  width: 120%;
+  height: 15rem;
+  background-color: #181f2a;
+  overflow: hidden;
+}
+
+.header .bg-curvy {
+  position: absolute;
+  bottom: 15rem;
+  width: 100%;
+  height: 18rem;
+}
+
+.header__img-section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 3.5rem 0;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.header__intro-img {
+  width: 90%;
+}
+
+.header__heading {
+  margin-top: 2.5rem;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+
+.header__info {
+  margin-top: 1.8rem;
+  color: #ededed;
+}
+
+.header .get-started-btn {
+  display: block;
+  margin: 3rem auto 0;
+  padding: 1.2rem 0;
+  width: 24rem;
+  color: white;
+  background-color: #339ecc;
+  border-radius: 2rem;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+  cursor: pointer;
+}
+
+.header .get-started-btn:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.header .wrapper {
+  z-index: 1;
+}
+
+.main {
+  position: relative;
+}
+
+.features {
+  padding: 6rem 3.5rem;
+  background-color: #181f2a;
+}
+
+.features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.features .feature__heading {
+  margin-top: 2rem;
+}
+
+.features .feature__info {
+  margin-top: 1rem;
+  color: #ededed;
+}
+
+.features .stay-productive {
+  margin-top: 14rem;
+}
+
+.features .stay-productive__img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.features .stay-productive__heading {
+  margin-top: 3rem;
+}
+
+.features .stay-productive__text {
+  margin-top: 1rem;
+  color: #ededed;
+}
+
+.features .stay-productive__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 0.5rem;
+  width: 15.2rem;
+  color: #65e2d9;
+  border-bottom: 1px solid #65e2d9;
+  -webkit-transition: color 0.8s, border-bottom-color 0.8s;
+  transition: color 0.8s, border-bottom-color 0.8s;
+}
+
+.features .stay-productive__link:hover {
+  color: white;
+  border-bottom-color: white;
+}
+
+.features .stay-productive__arrow-icon {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.team {
+  padding: 6rem 4.5rem 28rem;
+  background-color: #181f2a;
+}
+
+.team .card {
+  margin-top: 2.5rem;
+  padding: 2.5rem 2rem;
+  background-color: #202a3c;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 4px 3px 5px #000;
+          box-shadow: 4px 3px 5px #000;
+}
+
+.team .card__info {
+  color: #ededed;
+}
+
+.team .card__person-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.team .card__img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+}
+
+.team .card__person-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team .card__person-name {
+  font-weight: bold;
+  color: white;
+}
+
+.team .card__person-position {
+  font-size: 1.2rem;
+  color: #ededed;
+}
+
+.team .card--one {
+  position: relative;
+}
+
+.team .card .bg-quotes-icon {
+  position: absolute;
+  top: -1.6rem;
+  left: 0.5rem;
+  width: 2rem;
+}
+
+.sign-in {
+  position: absolute;
+  bottom: -16.7rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.sign-in .wrapper {
+  max-width: 900px;
+}
+
+.sign-in__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 2.4rem 2rem;
+  background-color: #1c2431;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
+}
+
+.sign-in__text {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #ededed;
+}
+
+.sign-in__input-email, .sign-in__btn {
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.sign-in__input-email {
+  margin-top: 3rem;
+}
+
+.sign-in__btn {
+  margin-top: 2rem;
+  color: white;
+  background-color: #339ecc;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.sign-in__btn:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.sign-in__msg {
+  margin-top: 2rem;
+  color: transparent;
+}
+
+.sign-in__msg--error {
+  color: #ff4242;
+}
+
+.sign-in__msg--success {
+  color: #29a847;
+}
+
+.footer {
+  padding: 24rem 3rem 4rem;
+  background-color: #0b1523;
+}
+
+.footer__brand-logo {
+  padding: 0 1rem 4rem;
+}
+
+.footer__location-box,
+.footer .phone,
+.footer .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer__contact-box {
+  margin-bottom: 5rem;
+}
+
+.footer__icon {
+  margin-right: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.footer__icon--location {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 1.9rem;
+  margin-top: 0.5rem;
+}
+
+.footer__text {
+  color: #ededed;
+}
+
+.footer__links-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3.5rem;
+}
+
+.footer__link {
+  margin-bottom: 1.5rem;
+  color: #ededed;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  -webkit-transition: color 0.3s, -webkit-text-decoration-color 0.5s;
+  transition: color 0.3s, -webkit-text-decoration-color 0.5s;
+  transition: color 0.3s, text-decoration-color 0.5s;
+  transition: color 0.3s, text-decoration-color 0.5s, -webkit-text-decoration-color 0.5s;
+}
+
+.footer__link:hover {
+  color: white;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.footer__social-media, .footer__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.footer__social-icon {
+  margin-right: 1rem;
+  width: 3.6rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-transition: color 0.3s, border-color 0.3s;
+  transition: color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.footer__social-icon:last-child {
+  margin-right: 0;
+}
+
+.footer__social-icon:hover {
+  color: #65e2d9;
+  border-color: #65e2d9;
+}
+
+.footer .fa-brands {
+  padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 1.45rem;
+  }
+  .heading {
+    font-size: 1.9rem;
+  }
+  .header__intro-img {
+    width: 80%;
+  }
+  .header__heading {
+    padding: 0 12%;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .header__info {
+    padding: 0 18%;
+  }
+  .features {
+    padding: 6rem 4.5rem;
+  }
+  .features .feature {
+    padding: 0 16%;
+  }
+  .features .stay-productive__heading {
+    font-size: 2.6rem;
+  }
+  .features .stay-productive__link {
+    margin-top: 1rem;
+    width: 15.6rem;
+  }
+  .team {
+    padding: 6rem 8.5rem 28rem;
+  }
+  .team .card {
+    margin-top: 3.5rem;
+  }
+  .team .card__img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+  }
+  .team .card__person-name {
+    font-size: 1.5rem;
+  }
+  .team .card .bg-quotes-icon {
+    position: absolute;
+    top: -2rem;
+    left: 0.8rem;
+    width: 3rem;
+  }
+  .sign-in {
+    bottom: -12.7rem;
+    padding: 0 3rem;
+  }
+  .sign-in__text {
+    padding: 0 2rem;
+  }
+  .sign-in__input-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .sign-in__input-email, .sign-in__btn {
+    height: 5.2rem;
+  }
+  .sign-in__input-email {
+    width: 55%;
+    margin-right: 2rem;
+  }
+  .sign-in__btn {
+    width: 45%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .header .navigation__brand-logo-box {
+    margin: 3rem 0 0 3rem;
+  }
+  .header .navigation__brand-logo-icon {
+    width: 12rem;
+    height: 4.2rem;
+  }
+  .header .navigation__links {
+    margin-top: 3rem;
+    margin-right: 2rem;
+  }
+  .header .navigation__link {
+    font-size: 1.6rem;
+  }
+  .header .mobile-spacer {
+    display: none;
+  }
+  .header .bg-curvy {
+    bottom: 0rem;
+  }
+  .header__img-section {
+    padding: 6rem 15rem 0;
+  }
+  .header__intro-img {
+    width: 90%;
+  }
+  .header__heading {
+    margin-top: 3rem;
+    padding: 0 7%;
+    font-size: 2.7rem;
+    line-height: 3.7rem;
+  }
+  .header__info {
+    padding: 0 12%;
+  }
+  .header .get-started-btn {
+    font-size: 1.6rem;
+  }
+  .features__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features .feature {
+    padding: 0 3rem;
+    width: 50%;
+  }
+  .features .feature__icon {
+    height: 8rem;
+  }
+  .features .feature__heading {
+    margin-top: 3rem;
+  }
+  .features .stay-productive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features .stay-productive__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 4rem;
+  }
+  .features .stay-productive__img {
+    width: 50%;
+  }
+  .features .stay-productive__heading {
+    padding-right: 2rem;
+    font-size: 3.15rem;
+  }
+  .team {
+    padding: 6rem 10.5rem 28rem;
+  }
+  .team .card {
+    padding: 3rem 3rem;
+  }
+  .sign-in {
+    padding: 0 11%;
+  }
+  .sign-in__box {
+    padding: 4rem 5rem;
+  }
+  .sign-in__text {
+    padding: 0 3.5rem;
+  }
+  .sign-in__input-email {
+    width: 60%;
+  }
+  .sign-in__btn {
+    width: 40%;
+  }
+  .sign-in__msg {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 3rem;
+  }
+  .footer {
+    padding: 24rem 6rem 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .header .navigation {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .header .navigation__brand-logo-box {
+    margin: 4rem 0 0 4rem;
+  }
+  .header .navigation__links {
+    margin-top: 4rem;
+  }
+  .header .navigation__link {
+    font-size: 1.8rem;
+  }
+  .header .mobile-spacer {
+    display: none;
+  }
+  .header .bg-curvy {
+    bottom: 0;
+    height: 35.2rem;
+  }
+  .header__img-section {
+    padding: 5rem 15rem 8rem;
+  }
+  .header__intro-img {
+    width: 50%;
+  }
+  .header__heading {
+    margin-top: 4rem;
+    padding: 0 13%;
+    font-size: 3rem;
+    line-height: 4.2rem;
+  }
+  .header__info {
+    padding: 0 21%;
+  }
+  .features {
+    padding: 0 3.5rem 6rem;
+  }
+  .features .feature {
+    padding: 0 4rem;
+  }
+  .features .stay-productive__box {
+    padding: 0 3rem 0 4rem;
+  }
+  .features .stay-productive__heading {
+    padding-right: 13rem;
+  }
+  .features .stay-productive__link {
+    width: 17.2rem;
+  }
+  .team {
+    padding: 10rem 4.5rem 28rem;
+  }
+  .team .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .card {
+    margin-top: 0;
+    width: 45%;
+  }
+  .team .card:last-child {
+    margin-top: 2.5rem;
+  }
+  .team .card--one {
+    margin-right: 2.5rem;
+  }
+  .team .card__person-name {
+    font-size: 1.7rem;
+  }
+  .team .card__person-position {
+    font-size: 1.5rem;
+  }
+  .sign-in {
+    padding: 0 15%;
+  }
+  .sign-in__box {
+    padding: 4rem 5rem;
+  }
+  .sign-in__text {
+    padding: 0 3.5rem;
+  }
+  .sign-in__input-email {
+    width: 60%;
+  }
+  .sign-in__btn {
+    width: 40%;
+    font-size: 1.6rem;
+  }
+  .footer {
+    padding: 24rem 4rem 4rem;
+  }
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__location-box, .footer__contact-box, .footer__links {
+    margin-right: 6rem;
+  }
+  .footer__location-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__text {
+    padding-right: 1.5rem;
+  }
+  .footer__links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__social-media {
+    height: 3.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__intro-img {
+    width: 40%;
+  }
+  .header__heading {
+    padding: 0 23%;
+  }
+  .header__info {
+    margin-top: 2.8rem;
+    padding: 0 29%;
+  }
+  .features .feature {
+    padding: 0 8rem;
+  }
+  .features .stay-productive__box {
+    padding: 0 3rem 0 6rem;
+  }
+  .team .wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .team .card {
+    margin-right: 3.5rem;
+  }
+  .team .card:last-child {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .sign-in {
+    padding: 0 20%;
+  }
+  .sign-in__box {
+    padding: 4rem 5rem;
+  }
+  .sign-in__text {
+    padding: 0 3.5rem;
+  }
+  .sign-in__input-email {
+    width: 65%;
+  }
+  .sign-in__btn {
+    width: 35%;
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,435 @@
+@import "./colors";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: $introColor;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heading {
+  color: $white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+}
+
+.header {
+  .navigation {
+    display: flex;
+    width: 100%;
+
+    &__brand-logo-box {
+      margin: 2rem 0 0 2rem;
+    }
+
+    &__brand-logo-icon {
+      width: 10rem;
+      height: 3.2rem;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-top: 2rem;
+    }
+
+    &__link {
+      margin-right: 2rem;
+      color: $lightGrey;
+      text-decoration: underline transparent;
+      transition: color 0.3s, text-decoration-color 0.5s;
+
+      &:hover {
+        color: $white;
+        text-decoration-color: $white;
+      }
+    }
+  }
+
+  .mobile-spacer {
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    height: 15rem;
+    background-color: $mainBackground;
+    overflow: hidden;
+  }
+
+  .bg-curvy {
+    position: absolute;
+    bottom: 15rem;
+    width: 100%;
+    height: 18rem;
+  }
+
+  &__img-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 3.5rem 0;
+    text-align: center;
+    color: $white;
+    overflow: hidden;
+  }
+
+  &__intro-img {
+    width: 90%;
+  }
+
+  &__heading {
+    margin-top: 2.5rem;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  &__info {
+    margin-top: 1.8rem;
+    color: $lightGrey;
+  }
+
+  .get-started-btn {
+    display: block;
+    margin: 3rem auto 0;
+    padding: 1.2rem 0;
+    width: 24rem;
+    color: $white;
+    background-color: $blue;
+    border-radius: 2rem;
+    transition: filter 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .wrapper {
+    z-index: 1;
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.features {
+  padding: 6rem 3.5rem;
+  background-color: $mainBackground;
+
+  .feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    text-align: center;
+
+    &__heading {
+      margin-top: 2rem;
+    }
+
+    &__info {
+      margin-top: 1rem;
+      color: $lightGrey;
+    }
+  }
+
+  .stay-productive {
+    margin-top: 14rem;
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    &__heading {
+      margin-top: 3rem;
+    }
+
+    &__text {
+      margin-top: 1rem;
+      color: $lightGrey;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0 0.5rem;
+      width: 15.2rem;
+      color: $cyan;
+      border-bottom: 1px solid $cyan;
+      transition: color 0.8s, border-bottom-color 0.8s;
+
+      &:hover {
+        color: $white;
+        border-bottom-color: $white;
+      }
+    }
+
+    &__arrow-icon {
+      margin-left: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.team {
+  padding: 6rem 4.5rem 28rem;
+  background-color: $mainBackground;
+
+  .card {
+    margin-top: 2.5rem;
+    padding: 2.5rem 2rem;
+    background-color: $testimonialsBackground;
+    border-radius: 0.5rem;
+    box-shadow: 4px 3px 5px #000;
+
+    &__info {
+      color: $lightGrey;
+    }
+
+    &__person-box {
+      display: flex;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    &__img {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.7rem;
+      border-radius: 50%;
+    }
+
+    &__person-data {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    &__person-name {
+      font-weight: bold;
+      color: $white;
+    }
+
+    &__person-position {
+      font-size: 1.2rem;
+      color: $lightGrey;
+    }
+
+    &--one {
+      position: relative;
+    }
+
+    .bg-quotes-icon {
+      position: absolute;
+      top: -1.6rem;
+      left: 0.5rem;
+      width: 2rem;
+    }
+  }
+}
+
+.sign-in {
+  position: absolute;
+  bottom: -16.7rem;
+  padding: 0 2rem;
+  width: 100%;
+
+  .wrapper {
+    max-width: 900px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2.4rem 2rem;
+    background-color: $introColor;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px #000;
+  }
+
+  &__text {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: $lightGrey;
+  }
+
+  &__input-email,
+  &__btn {
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    border-radius: 5rem;
+  }
+
+  &__input-email {
+    margin-top: 3rem;
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    color: $white;
+    background-color: $blue;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  &__msg {
+    margin-top: 2rem;
+    color: transparent;
+
+    &--error {
+      color: $lightRed;
+    }
+
+    &--success {
+      color: $green;
+    }
+  }
+}
+
+.footer {
+  padding: 24rem 3rem 4rem;
+  background-color: $footerBackground;
+
+  &__brand-logo {
+    padding: 0 1rem 4rem;
+  }
+
+  &__location-box,
+  .phone,
+  .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__contact-box {
+    margin-bottom: 5rem;
+  }
+
+  &__icon {
+    margin-right: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+
+    &--location {
+      align-self: flex-start;
+      margin-right: 1.9rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__text {
+    color: $lightGrey;
+  }
+
+  &__links-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+  }
+
+  &__link {
+    margin-bottom: 1.5rem;
+    color: $lightGrey;
+    text-decoration: underline transparent;
+    transition: color 0.3s, text-decoration-color 0.5s;
+
+    &:hover {
+      color: $white;
+      text-decoration-color: $white;
+    }
+  }
+
+  &__social-media,
+  &__social-icon {
+    display: flex;
+    justify-content: center;
+    color: $white;
+  }
+
+  &__social-icon {
+    margin-right: 1rem;
+    width: 3.6rem;
+    border: 1px solid $white;
+    border-radius: 50%;
+    transition: color 0.3s, border-color 0.3s;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $cyan;
+      border-color: $cyan;
+    }
+  }
+
+  .fa-brands {
+    padding: 1rem;
+  }
+}
+
+@import "./small";
+@import "./medium";
+@import "./large";
+@import "./extraLarge";
